@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+I	tetris.py	/^I = [['..0..',$/;"	v
+J	tetris.py	/^J = [['.....',$/;"	v
+L	tetris.py	/^L = [['.....',$/;"	v
+O	tetris.py	/^O = [['.....',$/;"	v
+Piece	tetris.py	/^class Piece(object):$/;"	c
+S	tetris.py	/^S = [['.....',$/;"	v
+T	tetris.py	/^T = [['.....',$/;"	v
+Z	tetris.py	/^Z = [['.....',$/;"	v
+block_size	tetris.py	/^block_size = 30$/;"	v
+check_lost	tetris.py	/^def check_lost(positions):$/;"	f
+clear_rows	tetris.py	/^def clear_rows(grid, locked):$/;"	f
+convert_shape_format	tetris.py	/^def convert_shape_format(shape):$/;"	f
+create_grid	tetris.py	/^def create_grid(locked_positions={}):$/;"	f
+draw_grid	tetris.py	/^def draw_grid(surface, row, col):$/;"	f
+draw_next_shape	tetris.py	/^def draw_next_shape(shape, surface):$/;"	f
+draw_text_middle	tetris.py	/^def draw_text_middle(text, size, color, surface):  $/;"	f
+draw_window	tetris.py	/^def draw_window(surface):$/;"	f
+get_shape	tetris.py	/^def get_shape():$/;"	f
+main	tetris.py	/^def main():$/;"	f
+main_menu	tetris.py	/^def main_menu():$/;"	f
+play_height	tetris.py	/^play_height = 600  # meaning 600 \/\/ 20 = 20 height per block$/;"	v
+play_width	tetris.py	/^play_width = 300  # meaning 300 \/\/ 10 = 30 width per block$/;"	v
+s_height	tetris.py	/^s_height = 700$/;"	v
+s_width	tetris.py	/^s_width = 800$/;"	v
+shape_colors	tetris.py	/^shape_colors = [(0, 255, 0), (255, 0, 0), (0, 255, 255), (255, 255, 0), (255, 165, 0), (0, 0, 25/;"	v
+shapes	tetris.py	/^shapes = [S, Z, I, O, J, L, T]$/;"	v
+top_left_x	tetris.py	/^top_left_x = (s_width - play_width) \/\/ 2$/;"	v
+top_left_y	tetris.py	/^top_left_y = s_height - play_height$/;"	v
+valid_space	tetris.py	/^def valid_space(shape, grid):$/;"	f
