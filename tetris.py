@@ -9,7 +9,7 @@ import random
 # - draw_window
 # - rotating shape in main
 # - setting up the main
-
+# - test
 """
 10 x 20 square grid
 shapes: S, Z, I, O, J, L, T
