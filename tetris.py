@@ -10,6 +10,10 @@ import random
 # - rotating shape in main
 # - setting up the main
 
+
+#TODO: clear rows algorithm has a bug in it.
+
+
 """
 10 x 20 square grid
 shapes: S, Z, I, O, J, L, T
@@ -152,7 +156,7 @@ def create_grid(locked_positions={}):
         for j in range(len(grid[i])):
             if (j,i) in locked_positions:
                 c = locked_positions[(j,i)]
-                grid[i][j]=c
+                grid[i][j] = c
 
     return grid
 
@@ -211,6 +215,7 @@ def draw_grid(surface, grid):
 def clear_rows(grid, locked):
     
     inc = 0
+    
     for i in range(len(grid)-1, -1, -1):
         row = grid[i]
         if (0,0,0) not in row:
@@ -250,7 +255,7 @@ def draw_next_shape(shape, surface, score=0):
 def update_score(nscore):
     score = max_score()
 
-    with open('scores.txt', 'r') as f:
+    with open('scores.txt', 'w') as f:
         if int(score) > nscore:
             f.write(str(score))
         else:
@@ -260,8 +265,8 @@ def max_score():
     with open('scores.txt', 'r') as f:
         lines = f.readlines()
         score = lines[0].strip()
-    
     return score
+    
 
 def draw_window(surface, grid, score=0, last_score=0):
     
@@ -283,7 +288,7 @@ def draw_window(surface, grid, score=0, last_score=0):
     surface.blit(label, (sx + 30, sy + 155))
     
     # high score
-    label = font.render('High Score:' + str(score), 1, (255,255,255))
+    label = font.render('High Score:' + str(last_score), 1, (255,255,255))
 
     sx = top_left_x - 200
     sy = top_left_y + 200
