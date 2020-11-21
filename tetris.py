@@ -11,7 +11,6 @@ import random
 # - setting up the main
 
 
-#TODO: clear rows algorithm has a bug in it.
 
 
 """
